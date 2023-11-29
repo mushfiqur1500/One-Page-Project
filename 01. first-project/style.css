@@ -33,8 +33,18 @@ p{
         font-weight: 300;
         letter-spacing: .05rem;
     }
-}
-
+    .section-title{
+        font-size: 4rem;
+        font-weight: 300;
+        color: black;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+    .section-title span {
+    color: crimson;
+    }
 /* Hero Section */
 #hero {
     background-image: url(./img/hero-bg.png);
@@ -126,19 +136,7 @@ p{
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
 
-}
-#services .section-title span {
-color: crimson;
-}
 #services .service-bottom{
     display: flex;
     align-items: center;
@@ -188,6 +186,33 @@ color: crimson;
 }
 /* End Services Section */
 
+/* Projects section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+/* End Projects Section */
 
 /*keyframes */
 @keyframes text_reveal_box {
