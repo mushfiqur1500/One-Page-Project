@@ -421,3 +421,49 @@ transition: .3s ease box-shadow;
   }
 }
 /* End keyframes */
+
+/* Media Query For Tablet */
+@media only screen and (min-width:768px){
+.cta {
+  font-size: 2rem;
+  padding: 20px 60px;
+}
+h1 .section-title {
+  font-size: 6rem;
+}
+
+/* Hero */
+#hero h1 {
+  font-size: 7rem;
+}
+/* End Hero */
+
+/* Services Section */
+#services .service-bottom .service-item {
+  flex-basis: 45%;
+  margin: 2.5%;
+}
+/* End Services Section */
+
+/* Project */
+#projects .project-item {
+  flex-direction: row;
+}
+#projects .project-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+#projects .project-item {
+  height: 400px;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+#project .all-projects .project-info {
+  height: 100%;
+}
+#projects .all-projects .project-img {
+  height: 100%;
+}
+/* End project */
+}
+/* End Media Query For Tablet */
