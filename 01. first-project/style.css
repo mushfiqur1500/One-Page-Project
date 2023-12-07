@@ -146,7 +146,10 @@ p {
   margin: 0 auto;
   padding: 100px 0;
 }
-
+#services .service-top {
+  width: 500px;
+  max-margin: 0 auto;
+}
 #services .service-bottom {
   display: flex;
   align-items: center;
@@ -177,7 +180,7 @@ p {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.6;
+  opacity: .9;
   z-index: -1;
 }
 #services .service-bottom .icon {
@@ -465,5 +468,72 @@ h1 .section-title {
   height: 100%;
 }
 /* End project */
+
+/* About */
+#About .about {
+  flex-direction: row;
+}
+#about .col-left {
+  width: 600px;
+  height: 400px;
+  padding-left: 60px;
+}
+#about .about .col-left .about-img::after {
+  left: -45px;
+  top: 34px;
+  height: 98%;
+  width: 98%;
+  border: 10px solid crimson;
+}
+#about .col-right {
+  text-align: left;
+  padding: 30px;
+}
+#about .col-right h1 {
+  text-align: left;
+}
+/*End About */
+
+/* Contact */
+#contact .contact {
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 20vh;
+}
+#contact .contact-items{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 0;
+}
+#contact .contact-item {
+  margin: 20px;
+  flex-direction: row;
+}
+#contact .contact-item .icon {
+  height: 100px;
+  width: 100px;
+}
+#contact .contact-item .icon img {
+  object-fit: contain;
+}
+#contact .contact-item .contact-info {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+/* End Contact */
 }
 /* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+  #services .service-bottom .service-item {
+    flex-basis: 22%;
+    margin: 1.5%;
+  }
+}
+/* End Media Query For Desktop */
